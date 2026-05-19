@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Present Continuous — тест</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Present Continuous</h1>
+      <p class="subtitle">Знакомство и разбор</p>
+    </header>
+
+    <section class="tense-section algorithm-section" aria-labelledby="algorithm-heading">
+      <h2 id="algorithm-heading" class="algorithm-heading">Конструировать времена несложно! Достаточно придерживаться алгоритма и пройти четыре шага:</h2>
+      <div class="algorithm-flow" role="list">
+        <div class="algorithm-step" role="listitem">
+          <div class="algorithm-card">1. Убедиться, что это Present Continuous</div>
+          <p class="algorithm-caption">Ситуация происходят "вотпрямщас", можно подставить "now"</p>
+        </div>
+        <div class="algorithm-connector" aria-hidden="true"><span class="algorithm-arrow">→</span></div>
+        <div class="algorithm-step" role="listitem">
+          <div class="algorithm-card">2. Определяем am, is, are</div>
+          <table class="aux-table" aria-label="Соответствие подлежащего и am, is, are">
+            <thead>
+              <tr>
+                <th scope="col">Подлежащее</th>
+                <th scope="col">am</th>
+                <th scope="col">is</th>
+                <th scope="col">are</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">I</th>
+                <td class="aux-mark" aria-label="am">✓</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">he / she / it</th>
+                <td></td>
+                <td class="aux-mark" aria-label="is">✓</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">you / we / they</th>
+                <td></td>
+                <td></td>
+                <td class="aux-mark" aria-label="are">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="algorithm-connector" aria-hidden="true"><span class="algorithm-arrow">→</span></div>
+        <div class="algorithm-step" role="listitem">
+          <div class="algorithm-card">3. + , - или ?</div>
+          <p class="algorithm-caption">Если предложение вопросительное, переносим вспомогательное слово в начало; если отрицательное — добавляем <em>not</em></p>
+        </div>
+        <div class="algorithm-connector" aria-hidden="true"><span class="algorithm-arrow">→</span></div>
+        <div class="algorithm-step algorithm-step--spelling" role="listitem">
+          <div class="algorithm-card">4. Учесть особенности правописания</div>
+          <p class="algorithm-caption">К основе глагола добавляем окончание <strong>-ing</strong>:</p>
+          <ul class="algorithm-spelling-list">
+            <li>обычно просто <strong>-ing</strong>: <em>read → reading</em>, <em>play → playing</em></li>
+            <li>глагол на <strong>-e</strong>: убираем <strong>e</strong>: <em>write → writing</em>, <em>make → making</em></li>
+            <li>короткий глагол: удваиваем согласную: <em>run → running</em>, <em>swim → swimming</em></li>
+            <li>глагол на <strong>-ie</strong>: <strong>ie → y</strong>: <em>lie → lying</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card markers-card">
+      <h2>Слова-указатели времени</h2>
+      <p class="section-intro">Эти слова часто сопровождают Present Continuous:</p>
+      <ul class="markers-list" id="markers-list"></ul>
+    </section>
+
+    <form id="test-form" novalidate>
+      <section class="card" id="exercise-1-section">
+        <h2>Упражнение 1</h2>
+        <p class="section-intro">
+          Раскройте скобки и впишите правильную форму глагола в Present Continuous.
+          Впишите полную форму глагола.
+        </p>
+        <ol class="questions-list" id="gap-questions"></ol>
+      </section>
+
+      <section class="card" id="exercise-2-section">
+        <h2>Упражнение 2</h2>
+        <p class="section-intro">
+          Восстановите правильный порядок слов. Перетащите слова в нужную последовательность.
+        </p>
+        <ol class="questions-list" id="order-questions"></ol>
+      </section>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary" id="submit-btn">Завершить тест</button>
+        <p class="score-preview" id="score-preview" hidden></p>
+      </div>
+    </form>
+
+    <section class="card results-card" id="results-card" hidden>
+      <h2>Результаты</h2>
+      <p id="final-score"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
